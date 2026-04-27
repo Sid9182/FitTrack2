@@ -107,7 +107,12 @@
         IPHONEOS_DEPLOYMENT_TARGET = 17.0;
         PRODUCT_BUNDLE_IDENTIFIER = "com.fittrack.app";
         PRODUCT_NAME = "$(TARGET_NAME)";
+        SDKROOT = iphoneos;
+        SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+        SUPPORTS_MAC_DESIGNED_FOR_IPAD_IPHONE = NO;
+        SUPPORTS_MACCATALYST = NO;
         SWIFT_VERSION = 5.9;
+        TARGETED_DEVICE_FAMILY = "1,2";
       };
       name = Debug;
     };
@@ -122,7 +127,12 @@
         IPHONEOS_DEPLOYMENT_TARGET = 17.0;
         PRODUCT_BUNDLE_IDENTIFIER = "com.fittrack.app";
         PRODUCT_NAME = "$(TARGET_NAME)";
+        SDKROOT = iphoneos;
+        SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+        SUPPORTS_MAC_DESIGNED_FOR_IPAD_IPHONE = NO;
+        SUPPORTS_MACCATALYST = NO;
         SWIFT_VERSION = 5.9;
+        TARGETED_DEVICE_FAMILY = "1,2";
       };
       name = Release;
     };
