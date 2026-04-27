@@ -13,7 +13,7 @@ final class DashboardViewModel: ObservableObject {
 
     init() {
         observeSaves()
-        refreshActivities()
+        Task { await refreshActivities() }
     }
 
     private func observeSaves() {
