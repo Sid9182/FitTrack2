@@ -58,7 +58,7 @@ final class DashboardViewModel: ObservableObject {
     }
 }
 
-private extension DateFormatter {
+extension DateFormatter {
     static let shortWeekday: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "E"

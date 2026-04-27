@@ -12,9 +12,7 @@ final class ActivityDetailViewModel: ObservableObject {
     init(activity: Activity) {
         self.activity = activity
         let points = activity.orderedPoints.sorted { ($0.timestamp ?? Date()) < ($1.timestamp ?? Date()) }
-        routeCoordinates = points.map(
-            \LocationPoint.coordinate
-        )
+        routeCoordinates = points.map { $0.coordinate }
         averagePace = activity.totalDistance > 0 ? activity.duration / (activity.totalDistance / 1000) : 0
     }
 
@@ -84,7 +82,7 @@ final class ActivityDetailViewModel: ObservableObject {
         var splits: [Split] = []
         var currentSplitDistance: Double = 0
         var currentSplitTime: Double = 0
-        var goalDistance = 1000.0
+        let goalDistance = 1000.0
         var coveredDistance: Double = 0
 
         for pair in zip(points, points.dropFirst()) {

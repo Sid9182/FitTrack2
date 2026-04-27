@@ -5,10 +5,9 @@ import MapKit
 struct ActivityDetailView: View {
     @StateObject private var viewModel: ActivityDetailViewModel
 
-    private struct SegmentOverlay: Identifiable {
+    private struct RouteAnnotation: Identifiable {
         let id = UUID()
-        let coordinates: [CLLocationCoordinate2D]
-        let color: Color
+        let coordinate: CLLocationCoordinate2D
     }
 
     init(activity: Activity) {
@@ -33,15 +32,20 @@ struct ActivityDetailView: View {
     }
 
     private var mapSection: some View {
-        let overlays = viewModel.paceSegments.map { SegmentOverlay(coordinates: $0.coordinates, color: $0.color) }
+        let startAnnotations: [RouteAnnotation] = viewModel.routeCoordinates.first
+            .map { [RouteAnnotation(coordinate: $0)] } ?? []
 
         return Map(
             coordinateRegion: .constant(viewModel.routeRegion),
-            interactionModes: [.all],
-            overlayItems: overlays
-        ) { overlay in
-            MapPolyline(coordinates: overlay.coordinates)
-                .stroke(overlay.color, lineWidth: 6)
+            interactionModes: [],
+            annotationItems: startAnnotations
+        ) { item in
+            MapAnnotation(coordinate: item.coordinate) {
+                Circle()
+                    .fill(Color(hex: "1DB954"))
+                    .frame(width: 14, height: 14)
+                    .overlay(Circle().stroke(Color.white, lineWidth: 2))
+            }
         }
         .frame(height: 260)
         .cornerRadius(20)
