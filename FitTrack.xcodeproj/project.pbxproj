@@ -100,6 +100,7 @@
     A600000000000000000000AA /* Debug */ = {
       isa = XCBuildConfiguration;
       buildSettings = {
+        ALWAYS_SEARCH_USER_PATHS = NO;
         ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
         CODE_SIGN_STYLE = Automatic;
         DEVELOPMENT_TEAM = "";
@@ -120,6 +121,7 @@
     A700000000000000000000AA /* Release */ = {
       isa = XCBuildConfiguration;
       buildSettings = {
+        ALWAYS_SEARCH_USER_PATHS = NO;
         ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
         CODE_SIGN_STYLE = Automatic;
         DEVELOPMENT_TEAM = "";

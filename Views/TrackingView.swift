@@ -32,20 +32,12 @@ struct TrackingView: View {
         }
     }
 
-    private struct RouteOverlayItem: Identifiable {
-        let id = UUID()
-        let coordinates: [CLLocationCoordinate2D]
-    }
-
     private var mapView: some View {
-        let overlayItem = RouteOverlayItem(coordinates: viewModel.routeCoordinates())
-
-        return Map(
+        Map(
             coordinateRegion: $region,
             interactionModes: [.all],
             showsUserLocation: true,
-            annotationItems: lastAnnotation.map { [$0] } ?? [] ,
-            overlayItems: [overlayItem]
+            annotationItems: lastAnnotation.map { [$0] } ?? []
         ) { annotation in
             MapAnnotation(coordinate: annotation.coordinate) {
                 Circle()
@@ -55,11 +47,6 @@ struct TrackingView: View {
                     .scaleEffect(pulse ? 1.4 : 1)
                     .animation(.easeInOut(duration: 1).repeatForever(autoreverses: true), value: pulse)
                     .onAppear { pulse = true }
-            }
-        } overlayContent: { overlay in
-            if !overlay.coordinates.isEmpty {
-                MapPolyline(coordinates: overlay.coordinates)
-                    .stroke(Color(hex: "1DB954"), lineWidth: 5)
             }
         }
         .ignoresSafeArea()
@@ -110,7 +97,7 @@ struct TrackingView: View {
 
     private var paceStrip: some View {
         HStack(spacing: 4) {
-            ForEach(0..<6, id: \.) { index in
+            ForEach(0..<6, id: \.self) { index in
                 Rectangle()
                     .fill(colorForSegment(index))
                     .frame(height: 8)

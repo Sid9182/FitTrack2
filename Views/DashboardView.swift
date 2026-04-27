@@ -95,8 +95,7 @@ struct DashboardView: View {
                     .background(Color(hex: "1A1A1A"))
                     .cornerRadius(12)
             } else {
-                ForEach(viewModel.activities, id: \.
-                    objectID) { activity in
+                ForEach(viewModel.activities, id: \.objectID) { activity in
                     NavigationLink(destination: ActivityDetailView(activity: activity)) {
                         activityRow(activity)
                     }
