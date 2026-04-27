@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+  archiveVersion = 1;
+  classes = {};
+  objectVersion = 55;
+  objects = {
+
+    111111111111111111111111 /* Project object */ = {
+      isa = PBXProject;
+      attributes = {
+        LastUpgradeCheck = 1500;
+        ORGANIZATIONNAME = "FitTrack";
+        TargetAttributes = {
+          555555555555555555555555 = {
+            CreatedOnToolsVersion = 1500;
+          };
+        };
+      };
+      buildConfigurationList = 222222222222222222222222 /* Build configuration list for PBXProject */;
+      compatibilityVersion = "Xcode 15.0";
+      developmentRegion = English;
+      hasScannedForEncodings = 0;
+      knownRegions = (
+        en,
+      );
+      mainGroup = 333333333333333333333333 /* Main Group */;
+      productRefGroup = 444444444444444444444444 /* Products */;
+      projectDirPath = "";
+      projectRoot = "";
+      targets = (
+        555555555555555555555555 /* FitTrack */,
+      );
+    };
+
+    222222222222222222222222 /* Build configuration list for PBXProject */ = {
+      isa = XCConfigurationList;
+      buildConfigurations = (
+        666666666666666666666666 /* Debug */,
+        777777777777777777777777 /* Release */,
+      );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+
+    333333333333333333333333 /* Main Group */ = {
+      isa = PBXGroup;
+      children = (
+        888888888888888888888888 /* FitTrack */,
+        444444444444444444444444 /* Products */,
+      );
+      sourceTree = "<group>";
+    };
+
+    888888888888888888888888 /* FitTrack */ = {
+      isa = PBXGroup;
+      children = (
+        181818181818181818181818 /* FitTrackApp.swift */,
+        191919191919191919191919 /* Models.swift */,
+        1a1a1a1a1a1a1a1a1a1a1a1a1a /* LocationManager.swift */,
+        1b1b1b1b1b1b1b1b1b1b1b1b1b /* CoreDataManager.swift */,
+        1c1c1c1c1c1c1c1c1c1c1c1c1c /* TrackingViewModel.swift */,
+        1d1d1d1d1d1d1d1d1d1d1d1d1d /* DashboardViewModel.swift */,
+        1e1e1e1e1e1e1e1e1e1e1e1e1e1 /* ActivityDetailViewModel.swift */,
+        1f1f1f1f1f1f1f1f1f1f1f1f1f /* DashboardView.swift */,
+        202020202020202020202020 /* TrackingView.swift */,
+        212121212121212121212121 /* ActivityDetailView.swift */,
+        222222222222222222222222 /* Info.plist */,
+        232323232323232323232323 /* FitTrack.entitlements */,
+        242424242424242424242424 /* Assets.xcassets */,
+        262626262626262626262626 /* LaunchScreen.storyboard */,
+      );
+      sourceTree = "<group>";
+    };
+
+    444444444444444444444444 /* Products */ = {
+      isa = PBXGroup;
+      children = (
+        AAAAAAAAAAAAAAAAAAAAAAAA /* FitTrack.app */,
+      );
+      sourceTree = "<group>";
+    };
+
+    555555555555555555555555 /* FitTrack */ = {
+      isa = PBXNativeTarget;
+      buildConfigurationList = 888888888888888888888888 /* Build configuration list for PBXTarget */;
+      buildPhases = (
+        999999999999999999999999 /* Sources */,
+        111111111111111111111111 /* Frameworks */,
+        222222222222222222222222 /* Resources */,
+      );
+      buildRules = ();
+      dependencies = ();
+      name = FitTrack;
+      productName = FitTrack;
+      productReference = AAAAAAAAAAAAAAAAAAAAAAAA /* FitTrack.app */;
+      productType = "com.apple.product-type.application";
+    };
+
+    666666666666666666666666 /* Debug */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+        CODE_SIGN_STYLE = Automatic;
+        DEVELOPMENT_TEAM = "";
+        INFOPLIST_FILE = "Resources/Info.plist";
+        IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+        PRODUCT_BUNDLE_IDENTIFIER = "com.fittrack.app";
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        SWIFT_VERSION = 5.9;
+      };
+      name = Debug;
+    };
+
+    777777777777777777777777 /* Release */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+        CODE_SIGN_STYLE = Automatic;
+        DEVELOPMENT_TEAM = "";
+        INFOPLIST_FILE = "Resources/Info.plist";
+        IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+        PRODUCT_BUNDLE_IDENTIFIER = "com.fittrack.app";
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        SWIFT_VERSION = 5.9;
+      };
+      name = Release;
+    };
+
+    888888888888888888888888 /* Build configuration list for PBXTarget */ = {
+      isa = XCConfigurationList;
+      buildConfigurations = (
+        666666666666666666666666 /* Debug */,
+        777777777777777777777777 /* Release */,
+      );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+
+    999999999999999999999999 /* Sources */ = {
+      isa = PBXSourcesBuildPhase;
+      buildActionMask = 2147483647;
+      files = (
+        bbbbbbbbbbbbbbbbbbbbbbbb /* FitTrackApp.swift in Sources */,
+        cccccccccccccccccccccccc /* Models.swift in Sources */,
+        dddddddddddddddddddddddd /* LocationManager.swift in Sources */,
+        eeeeeeeeeeeeeeeeeeeeeeee /* CoreDataManager.swift in Sources */,
+        ffffffffffffffffffffffff /* TrackingViewModel.swift in Sources */,
+        101010101010101010101010 /* DashboardViewModel.swift in Sources */,
+        111111111111111111111112 /* ActivityDetailViewModel.swift in Sources */,
+        131313131313131313131313 /* DashboardView.swift in Sources */,
+        141414141414141414141414 /* TrackingView.swift in Sources */,
+        151515151515151515151515 /* ActivityDetailView.swift in Sources */,
+      );
+      runOnlyForDeploymentPostprocessing = 0;
+    };
+
+    111111111111111111111111 /* Frameworks */ = {
+      isa = PBXFrameworksBuildPhase;
+      buildActionMask = 2147483647;
+      files = ();
+      runOnlyForDeploymentPostprocessing = 0;
+    };
+
+    222222222222222222222222 /* Resources */ = {
+      isa = PBXResourcesBuildPhase;
+      buildActionMask = 2147483647;
+      files = (
+        161616161616161616161616 /* Info.plist in Resources */,
+        171717171717171717171717 /* FitTrack.entitlements in Resources */,
+        252525252525252525252525 /* Assets.xcassets in Resources */,
+        272727272727272727272727 /* LaunchScreen.storyboard in Resources */,
+      );
+      runOnlyForDeploymentPostprocessing = 0;
+    };
+
+    bbbbbbbbbbbbbbbbbbbbbbbb /* FitTrackApp.swift in Sources */ = { isa = PBXBuildFile; fileRef = 181818181818181818181818 /* FitTrackApp.swift */; };
+    cccccccccccccccccccccccc /* Models.swift in Sources */ = { isa = PBXBuildFile; fileRef = 191919191919191919191919 /* Models.swift */; };
+    dddddddddddddddddddddddd /* LocationManager.swift in Sources */ = { isa = PBXBuildFile; fileRef = 1a1a1a1a1a1a1a1a1a1a1a1a; };
+    eeeeeeeeeeeeeeeeeeeeeeee /* CoreDataManager.swift in Sources */ = { isa = PBXBuildFile; fileRef = 1b1b1b1b1b1b1b1b1b1b1b1b1b; };
+    ffffffffffffffffffffffff /* TrackingViewModel.swift in Sources */ = { isa = PBXBuildFile; fileRef = 1c1c1c1c1c1c1c1c1c1c1c1c1c; };
+    101010101010101010101010 /* DashboardViewModel.swift in Sources */ = { isa = PBXBuildFile; fileRef = 1d1d1d1d1d1d1d1d1d1d1d1d1d; };
+    111111111111111111111112 /* ActivityDetailViewModel.swift in Sources */ = { isa = PBXBuildFile; fileRef = 1e1e1e1e1e1e1e1e1e1e1e1e1e1; };
+    131313131313131313131313 /* DashboardView.swift in Sources */ = { isa = PBXBuildFile; fileRef = 1f1f1f1f1f1f1f1f1f1f1f1f1f; };
+    141414141414141414141414 /* TrackingView.swift in Sources */ = { isa = PBXBuildFile; fileRef = 202020202020202020202020; };
+    151515151515151515151515 /* ActivityDetailView.swift in Sources */ = { isa = PBXBuildFile; fileRef = 212121212121212121212121; };
+    161616161616161616161616 /* Info.plist in Resources */ = { isa = PBXBuildFile; fileRef = 222222222222222222222222 /* Info.plist */; };
+    171717171717171717171717 /* FitTrack.entitlements in Resources */ = { isa = PBXBuildFile; fileRef = 232323232323232323232323 /* FitTrack.entitlements */; };
+    252525252525252525252525 /* Assets.xcassets in Resources */ = { isa = PBXBuildFile; fileRef = 242424242424242424242424 /* Assets.xcassets */; };
+    272727272727272727272727 /* LaunchScreen.storyboard in Resources */ = { isa = PBXBuildFile; fileRef = 262626262626262626262626 /* LaunchScreen.storyboard */; };
+
+    181818181818181818181818 /* FitTrackApp.swift */ = {
+      isa = PBXFileReference;
+      lastKnownFileType = sourcecode.swift;
+      name = FitTrackApp.swift;
+      path = FitTrackApp.swift;
+      sourceTree = "<group>";
+    };
+    191919191919191919191919 /* Models.swift */ = {
+      isa = PBXFileReference;
+      lastKnownFileType = sourcecode.swift;
+      name = Models.swift;
+      path = Models.swift;
+      sourceTree = "<group>";
+    };
+    1a1a1a1a1a1a1a1a1a1a1a1a1a = {
+      isa = PBXFileReference;
+      lastKnownFileType = sourcecode.swift;
+      name = LocationManager.swift;
+      path = Services/LocationManager.swift;
+      sourceTree = "<group>";
+    };
+    1b1b1b1b1b1b1b1b1b1b1b1b1b = {
+      isa = PBXFileReference;
+      lastKnownFileType = sourcecode.swift;
+      name = CoreDataManager.swift;
+      path = Services/CoreDataManager.swift;
+      sourceTree = "<group>";
+    };
+    1c1c1c1c1c1c1c1c1c1c1c1c1c = {
+      isa = PBXFileReference;
+      lastKnownFileType = sourcecode.swift;
+      name = TrackingViewModel.swift;
+      path = ViewModels/TrackingViewModel.swift;
+      sourceTree = "<group>";
+    };
+    1d1d1d1d1d1d1d1d1d1d1d1d1d = {
+      isa = PBXFileReference;
+      lastKnownFileType = sourcecode.swift;
+      name = DashboardViewModel.swift;
+      path = ViewModels/DashboardViewModel.swift;
+      sourceTree = "<group>";
+    };
+    1e1e1e1e1e1e1e1e1e1e1e1e1e1 = {
+      isa = PBXFileReference;
+      lastKnownFileType = sourcecode.swift;
+      name = ActivityDetailViewModel.swift;
+      path = ViewModels/ActivityDetailViewModel.swift;
+      sourceTree = "<group>";
+    };
+    1f1f1f1f1f1f1f1f1f1f1f1f1f = {
+      isa = PBXFileReference;
+      lastKnownFileType = sourcecode.swift;
+      name = DashboardView.swift;
+      path = Views/DashboardView.swift;
+      sourceTree = "<group>";
+    };
+    202020202020202020202020 /* TrackingView.swift */ = {
+      isa = PBXFileReference;
+      lastKnownFileType = sourcecode.swift;
+      name = TrackingView.swift;
+      path = Views/TrackingView.swift;
+      sourceTree = "<group>";
+    };
+    212121212121212121212121 /* ActivityDetailView.swift */ = {
+      isa = PBXFileReference;
+      lastKnownFileType = sourcecode.swift;
+      name = ActivityDetailView.swift;
+      path = Views/ActivityDetailView.swift;
+      sourceTree = "<group>";
+    };
+    222222222222222222222222 /* Info.plist */ = {
+      isa = PBXFileReference;
+      lastKnownFileType = text.plist.xml;
+      name = Info.plist;
+      path = Resources/Info.plist;
+      sourceTree = "<group>";
+    };
+    232323232323232323232323 /* FitTrack.entitlements */ = {
+      isa = PBXFileReference;
+      lastKnownFileType = text.plist.xml;
+      name = FitTrack.entitlements;
+      path = Resources/FitTrack.entitlements;
+      sourceTree = "<group>";
+    };
+    242424242424242424242424 /* Assets.xcassets */ = {
+      isa = PBXFileReference;
+      lastKnownFileType = folder.assetcatalog;
+      name = Assets.xcassets;
+      path = Assets.xcassets;
+      sourceTree = "<group>";
+    };
+    262626262626262626262626 /* LaunchScreen.storyboard */ = {
+      isa = PBXFileReference;
+      lastKnownFileType = file.storyboard;
+      name = LaunchScreen.storyboard;
+      path = Base.lproj/LaunchScreen.storyboard;
+      sourceTree = "<group>";
+    };
+    AAAAAAAAAAAAAAAAAAAAAAAA /* FitTrack.app */ = {
+      isa = PBXFileReference;
+      explicitFileType = wrapper.application;
+      path = FitTrack.app;
+      sourceTree = BUILT_PRODUCTS_DIR;
+    };
+  };
+  rootObject = 111111111111111111111111 /* Project object */;
+}
